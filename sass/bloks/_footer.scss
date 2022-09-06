@@ -1,0 +1,134 @@
+.footer {
+  background-color: #2f303a;
+  padding: 60px 0;
+}
+
+.footer-logo {
+  margin-bottom: 20px;
+  display: block;
+}
+
+.logo-Stu-footer {
+  color: var(--main-color-white);
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-addres {
+  @include font(null, 14, 1.17, 0.03);
+  color: var(--main-color-white);
+
+  display: block;
+  font-style: normal;
+  width: 231px;
+  height: 81px;
+}
+.footer-list {
+  margin-top: 9px;
+}
+
+.footer-addres-contact {
+  @include font(null, 14, 1.17, 0.03);
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-addres-list {
+  margin-bottom: 9px;
+}
+
+.footer-addres-contact:hover,
+.footer-addres-contact:focus {
+  color: var(--main-color-blue);
+}
+
+.footer-soc {
+  margin-left: 70px;
+}
+
+.footer-soc-list {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-title {
+  @include font(null, 14, 1.14, 0.03);
+  text-transform: uppercase;
+  color: var(--main-color-white);
+  margin-bottom: 20px;
+}
+
+.footer-soc-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-soc-icon {
+  fill: var(--main-color-white);
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: var(--main-color-blue);
+}
+
+.mailing {
+  margin-left: 93px;
+}
+
+.mailing-title {
+  @include font(null, 14, 1.14, 0.03);
+  text-transform: uppercase;
+  color: var(--main-color-white);
+  margin-bottom: 20px;
+}
+
+.mailing-box {
+  display: flex;
+}
+
+.mailing-input {
+  @include font(null, 16, 1.25, 0.03);
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: #2f303a;
+  color: rgba(255, 255, 255, 0.6);
+  padding-left: 16px;
+}
+
+.mailing-input::placeholder {
+  @include font(null, 16, 1.25, 0.03);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.btn-mailing {
+  @include font(700, 16, 1.88, 0.06);
+  height: 50px;
+  width: 200px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  margin-left: 12px;
+}
+
+.mailing-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
