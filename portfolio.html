@@ -34,10 +34,10 @@
             <li><a href="" class="navigation__link link">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="navigation__list list">
+        <ul class="navigation__contact list">
           <li class="header__contact">
             <a lang="en" href="mailto:info@devstudio.com" class="header__mail link">
-              <svg class="header__icon" width="16" height="12">
+              <svg class="header__iconnavigation__contact" width="16" height="12">
                 <use href="./images/icon.svg#icon-envelope"></use></svg
               >info@devstudio.com
             </a>
@@ -67,7 +67,7 @@
             <nav class="mob__navigation">
               <ul class="mob__navigation-list list">
                 <li class="mob__navigation-item">
-                  <a href="./index.html" class="mob__navigation-link link " data-menu-close
+                  <a href="./index.html" class="mob__navigation-link link" data-menu-close
                     >Студія</a
                   >
                 </li>
@@ -116,10 +116,21 @@
                 <div class="portfolio-link-block">
                   <picture>
                     <source
-                     srcset="./images/portfolio1-mob-1x.jpg 1x,
-                     ./images/portfolio1-mob-2x.jpg 2x"
-                     media="(max-width:767px">
-                     <img src="./images/portfolio1.jpg" alt="notebook" width="450" height="294" />
+                      srcset="./images/portfolio1-mob-1x.jpg 1x, ./images/portfolio1-mob-2x.jpg 2x"
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      srcset="./images/portfolio1-tab-1x.jpg 1x, ./images/portfolio1-tab-2x.jpg 2x"
+                      media="(max-width:1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio1-desk-1x.jpg 1x,
+                        ./images/portfolio1-desk-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <img src="./images/portfolio1.jpg" alt="notebook" width="450" height="294" />
                   </picture>
                   <p class="portfolio-link-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -138,10 +149,21 @@
                 <div class="portfolio-link-block">
                   <picture>
                     <source
-                     srcset="./images/portfolio2-mob-1x.jpg 1x,
-                     ./images/portfolio2-mob-2x.jpg 2x"
-                     media="(max-width:767px">
-                     <img src="./images/portfolio2.jpg" alt="poster" width="450" height="294" />
+                      srcset="./images/portfolio2-mob-1x.jpg 1x, ./images/portfolio2-mob-2x.jpg 2x"
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      srcset="./images/portfolio2-tab-1x.jpg 1x, ./images/portfolio2-tab-2x.jpg 2x"
+                      media="(max-width:1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio2-desk-1x.jpg 1x,
+                        ./images/portfolio2-desk-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <img src="./images/portfolio2.jpg" alt="poster" width="450" height="294" />
                   </picture>
                   <p class="portfolio-link-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -160,10 +182,26 @@
                 <div class="portfolio-link-block">
                   <picture>
                     <source
-                     srcset="./images/portfolio3-mob-1x.jpg 1x,
-                     ./images/portfolio3-mob-2x.jpg 2x"
-                     media="(max-width:767px">
-                     <img src="./images/portfolio3.jpg" alt="restaurant logo" width="450" height="294" />
+                      srcset="./images/portfolio3-mob-1x.jpg 1x, ./images/portfolio3-mob-2x.jpg 2x"
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      srcset="./images/portfolio3-tab-1x.jpg 1x, ./images/portfolio3-tab-2x.jpg 2x"
+                      media="(max-width:1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio3-desk-1x.jpg 1x,
+                        ./images/portfolio3-desk-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <img
+                      src="./images/portfolio3.jpg"
+                      alt="restaurant logo"
+                      width="450"
+                      height="294"
+                    />
                   </picture>
                   <p class="portfolio-link-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -182,10 +220,21 @@
                 <div class="portfolio-link-block">
                   <picture>
                     <source
-                     srcset="./images/portfolio4-mob-1x.jpg 1x,
-                     ./images/portfolio4-mob-2x.jpg 2x"
-                     media="(max-width:767px">
-                     <img src="./images/portfolio4.jpg" alt="headphones" width="450" height="294" />
+                      srcset="./images/portfolio4-mob-1x.jpg 1x, ./images/portfolio4-mob-2x.jpg 2x"
+                      media="(max-width:767px"
+                    />
+                    <source
+                      srcset="./images/portfolio4-tab-1x.jpg 1x, ./images/portfolio4-tab-2x.jpg 2x"
+                      media="(max-width:1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio4-desk-1x.jpg 1x,
+                        ./images/portfolio4-desk-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <img src="./images/portfolio4.jpg" alt="headphones" width="450" height="294" />
                   </picture>
                   <p class="portfolio-link-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -204,10 +253,21 @@
                 <div class="portfolio-link-block">
                   <picture>
                     <source
-                     srcset="./images/portfolio5-mob-1x.jpg 1x,
-                     ./images/portfolio5-mob-2x.jpg 2x"
-                     media="(max-width:767px">
-                     <img src="./images/portfolio5.jpg" alt="boxes" width="450" height="294" />
+                      srcset="./images/portfolio5-mob-1x.jpg 1x, ./images/portfolio5-mob-2x.jpg 2x"
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      srcset="./images/portfolio5-tab-1x.jpg 1x, ./images/portfolio5-tab-2x.jpg 2x"
+                      media="(max-width:1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio5-desk-1x.jpg 1x,
+                        ./images/portfolio5-desk-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <img src="./images/portfolio5.jpg" alt="boxes" width="450" height="294" />
                   </picture>
                   <p class="portfolio-link-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -226,10 +286,21 @@
                 <div class="portfolio-link-block">
                   <picture>
                     <source
-                     srcset="./images/portfolio6-mob-1x.jpg 1x,
-                     ./images/portfolio6-mob-2x.jpg 2x"
-                     media="(max-width:767px">
-                     <img src="./images/portfolio6.jpg" alt="monitor" width="450" height="294" />
+                      srcset="./images/portfolio6-mob-1x.jpg 1x, ./images/portfolio6-mob-2x.jpg 2x"
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      srcset="./images/portfolio6-tab-1x.jpg 1x, ./images/portfolio6-tab-2x.jpg 2x"
+                      media="(max-width:1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio6-desk-1x.jpg 1x,
+                        ./images/portfolio6-desk-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <img src="./images/portfolio6.jpg" alt="monitor" width="450" height="294" />
                   </picture>
                   <p class="portfolio-link-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -248,10 +319,21 @@
                 <div class="portfolio-link-block">
                   <picture>
                     <source
-                     srcset="./images/portfolio7-mob-1x.jpg 1x,
-                     ./images/portfolio7-mob-2x.jpg 2x"
-                     media="(max-width:767px">
-                     <img src="./images/portfolio7.jpg" alt="book" width="450" height="294" />
+                      srcset="./images/portfolio7-mob-1x.jpg 1x, ./images/portfolio7-mob-2x.jpg 2x"
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      srcset="./images/portfolio7-tab-1x.jpg 1x, ./images/portfolio7-tab-2x.jpg 2x"
+                      media="(max-width:1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio7-desk-1x.jpg 1x,
+                        ./images/portfolio7-desk-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <img src="./images/portfolio7.jpg" alt="book" width="450" height="294" />
                   </picture>
                   <p class="portfolio-link-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -270,10 +352,21 @@
                 <div class="portfolio-link-block">
                   <picture>
                     <source
-                     srcset="./images/portfolio8-mob-1x.jpg 1x,
-                     ./images/portfolio8-mob-2x.jpg 2x"
-                     media="(max-width:767px">
-                     <img src="./images/portfolio8.jpg" alt="project LAB" width="450" height="294" />
+                      srcset="./images/portfolio8-mob-1x.jpg 1x, ./images/portfolio8-mob-2x.jpg 2x"
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      srcset="./images/portfolio8-tab-1x.jpg 1x, ./images/portfolio8-tab-2x.jpg 2x"
+                      media="(max-width:1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio8-desk-1x.jpg 1x,
+                        ./images/portfolio8-desk-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <img src="./images/portfolio8.jpg" alt="project LAB" width="450" height="294" />
                   </picture>
                   <p class="portfolio-link-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -289,12 +382,24 @@
             </li>
             <li class="portfolio-list-block">
               <a href="" class="portfolio-link-title link">
-                <div class="portfolio-link-block"><picture>
+                <div class="portfolio-link-block">
+                  <picture>
                     <source
-                     srcset="./images/portfolio9-mob-1x.jpg 1x,
-                     ./images/portfolio9-mob-2x.jpg 2x"
-                     media="(max-width:767px">
-                     <img src="./images/portfolio9.jpg" alt="notebook" width="450" height="294" />
+                      srcset="./images/portfolio9-mob-1x.jpg 1x, ./images/portfolio9-mob-2x.jpg 2x"
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      srcset="./images/portfolio9-tab-1x.jpg 1x, ./images/portfolio9-tab-2x.jpg 2x"
+                      media="(max-width:1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio9-desk-1x.jpg 1x,
+                        ./images/portfolio9-desk-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <img src="./images/portfolio9.jpg" alt="notebook" width="450" height="294" />
                   </picture>
                   <p class="portfolio-link-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.

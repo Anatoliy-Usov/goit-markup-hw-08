@@ -93,6 +93,9 @@
       column-gap: 50px;
       margin-left: 93px;
     }
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+    }
   }
 
   &__link {
@@ -126,6 +129,14 @@
   gap: 10px;
   width: min-content;
   margin-left: auto;
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 50px;
+    margin-left: auto;
+  }
 }
 
 .choice {

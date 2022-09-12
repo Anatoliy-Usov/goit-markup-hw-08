@@ -4,12 +4,21 @@
   text-align: center;
   @media screen and (min-width: 768px) {
     padding-top: 0;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
 .footer-logo {
   margin-bottom: 20px;
   display: block;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    margin-left: -1px;
+  }
 }
 
 .logo-Stu-footer {
@@ -24,6 +33,11 @@
     justify-content: space-around;
     text-align: center;
   }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
 }
 
 .footer-addres {
@@ -31,11 +45,12 @@
   color: var(--main-color-white);
   font-style: normal;
   text-align: center;
-
-  // display: block;
-  //
-  // width: 231px;
-  // height: 81px;
+  @media screen and (min-width: 1200px) {
+    display: block;
+    text-align: left;
+    width: 231px;
+    height: 81px;
+  }
 }
 .footer-list {
   margin-top: 8px;
@@ -61,7 +76,11 @@
 .footer-soc {
   margin-top: 60px;
   margin-bottom: 60px;
-  // margin-left: 70px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+    margin-bottom: 100px;
+    margin-right: 93px;
+  }
 }
 
 .footer-soc-list {
@@ -75,6 +94,9 @@
   text-transform: uppercase;
   color: var(--main-color-white);
   margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .footer-soc-link {
@@ -97,11 +119,9 @@
   background-color: var(--main-color-blue);
 }
 
-.mailing-box {
-  //   // margin-left: 93px;
-  @media screen and (min-width: 768px) {
-    width: 450px;
-    flex-wrap: nowrap;
+.mailing {
+  @media screen and (min-width: 1200px) {
+    width: 570px;
   }
 }
 
@@ -111,6 +131,9 @@
   text-align: center;
   color: var(--main-color-white);
   margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .mailing-box {
@@ -118,8 +141,15 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  // justify-content: start;
-  // gap: 30px;
+  @media screen and (min-width: 768px) {
+    min-width: 450px;
+    flex-wrap: nowrap;
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: start;
+    gap: 30px;
+    width: 100%;
+  }
 }
 
 .mailing-input {
@@ -132,6 +162,9 @@
   background: #2f303a;
   color: rgba(255, 255, 255, 0.6);
   padding-left: 16px;
+  @media screen and (min-width: 768px) {
+    max-width: 450px;
+  }
 }
 
 .mailing-input::placeholder {

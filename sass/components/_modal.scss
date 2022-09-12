@@ -31,6 +31,10 @@
   @include mobile {
     max-width: 450px;
   }
+  @media screen and (min-width: 480px) {
+    width: 528px;
+    // max-height: 581px;
+  }
 
   // position: absolute;
   // width: 528px;
@@ -68,6 +72,9 @@
   @include mobile {
     margin: 0;
   }
+  @media screen and (min-width: 480px) {
+    height: 30px;
+  }
 }
 
 .btn-close:hover,
@@ -92,6 +99,13 @@
   @media screen and (min-width: 480px) {
     @include font(700, 20, 1.5, 0.03);
     margin-top: 40px;
+  }
+  @media screen and (min-width: 480px) {
+    height: 30px;
+    @include font(700, 20, 1.5, 0.03);
+  }
+  @media screen and (width: 1200px) {
+    margin-top: 0;
   }
 }
 
@@ -159,13 +173,18 @@
   @include mobile {
     height: 120px;
   }
+  @media screen and (width: 1200px) {
+    height: 120px;
+  }
+}
+
+.checkbox-box {
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .coment-input::placeholder {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
+  @include font(null, 12, 1, 16 0.01);
   color: rgba(117, 117, 117, 0.5);
 }
 
@@ -195,11 +214,15 @@
   display: flex;
   align-items: center;
   gap: 6px;
-  // margin-left: 10px;
   margin-top: 20px;
   margin-bottom: 30px;
   @media screen and (min-width: 480px) {
     @include font(400, 12, 1.17, 0.01);
+    margin-left: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    @include font(400, 14, 1.71, 0.03);
+    gap: 8px;
     margin-left: 14px;
   }
 }

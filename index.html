@@ -30,7 +30,7 @@
           <ul class="navigation__list list">
             <li><a href="./index.html" class="navigation__link link choice">Студія</a></li>
             <li><a href="./portfolio.html" class="navigation__link link">Портфоліо</a></li>
-            <li><a href="" class="navigation__link link" >Контакти</a></li>
+            <li><a href="" class="navigation__link link">Контакти</a></li>
           </ul>
         </nav>
         <ul class="navigation__contact list">
@@ -160,19 +160,46 @@
           <h2 class="referral-title">Чим ми займаємося</h2>
           <ul class="referral-list list">
             <li>
-              <img src="./images/example2.jpg" alt="примеры картинок" width="370" height="294" />
+              <picture>
+                <source srcset="./images/example1-1x.jpg 1x, ./images/example1-2x.jpg 2x" />
+                <img
+                  src="./images/example2.jpg"
+                  alt="Написание кода"
+                  width="370"
+                  height="294"
+                  class="services-img"
+                />
+              </picture>
               <div class="referral-block">
                 <p class="referral-text">Десктопні додатки</p>
               </div>
             </li>
             <li>
-              <img src="./images/example3.jpg" alt="примеры картинок" width="370" height="294" />
+              <picture>
+                <source srcset="./images/example2-1x.jpg 1x, ./images/example2-2x.jpg 2x" />
+                <img
+                  src="./images/example3.jpg"
+                  alt="Написание кода"
+                  width="370"
+                  height="294"
+                  class="services-img"
+                />
+              </picture>
               <div class="referral-block">
                 <p class="referral-text">Мобільні додатки</p>
               </div>
             </li>
             <li>
-              <img src="./images/example1.jpg" alt="примеры картинок" width="370" height="294" />
+              <picture>
+                <source srcset="./images/example3-1x.jpg 1x, ./images/example3-2x.jpg 2x" />
+                <img
+                  src="./images/example3.jpg"
+                  alt="Написание кода"
+                  width="370"
+                  height="294"
+                  class="services-img"
+                />
+              </picture>
               <div class="referral-block">
                 <p class="referral-text">Дизайнерські рішення</p>
               </div>
@@ -187,10 +214,24 @@
             <li class="team-item">
               <picture>
                 <source
-                     srcset="./images/igor-mobil-1x.jpg 1x,
-                     ./images/igor-mobil-2x.jpg 2x"
-                     media="(max-width:767px">
-                     <img src="./images/igor.jpg" alt="фото Игорь Демьяненко" width="450" height="460" />
+                  srcset="./images/igor-mobil-1x.jpg 1x, ./images/igor-mobil-2x.jpg 2x"
+                  media="(max-width:767px)"
+                />
+                <source
+                  srcset="./images/igor-tab-1x.jpg 1x, ./images/igor-tab-2x.jpg 2x"
+                  media="(max-width:1199px)"
+                />
+                <source
+                  srcset="./images/igor-desk-1x.jpg 1x, ./images/igor-desk-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <img
+                  src="./images/igor.jpg"
+                  alt="фото Игорь Демьяненко"
+                  width="450"
+                  height="460"
+                  class="services-img"
+                />
               </picture>
               <div class="team-name">
                 <h3 class="team-item-title">Игорь Демьяненко</h3>
@@ -229,12 +270,20 @@
             </li>
 
             <li class="team-item">
-               <picture>
+              <picture>
                 <source
-                     srcset="./images/olga-mobil-1x.jpg 1x,
-                     ./images/olga-mobil-2x.jpg 2x"
-                     media="(max-width:767px">
-                     <img src="./images/olga.jpg" alt="фото Ольга Репина" width="450" height="460" />
+                  srcset="./images/olga-mobil-1x.jpg 1x, ./images/olga-mobil-2x.jpg 2x"
+                  media="(max-width:767px)"
+                />
+                <source
+                  srcset="./images/olga-tab-1x.jpg 1x, ./images/olga-tab-2x.jpg 2x"
+                  media="(max-width:1199px)"
+                />
+                <source
+                  srcset="./images/olga-desk-1x.jpg 1x, ./images/olga-desk-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <img src="./images/olga.jpg" alt="фото Ольга Репина" width="450" height="460" />
               </picture>
               <div class="team-name">
                 <h3 class="team-item-title">Ольга Репина</h3>
@@ -273,12 +322,20 @@
             </li>
 
             <li class="team-item">
-               <picture>
+              <picture>
                 <source
-                     srcset="./images/nikol-mobil-1x.jpg 1x,
-                     ./images/nikol-mobil-2x.jpg 2x"
-                     media="(max-width:767px">
-                     <img src="./images/koly.jpg" alt="фото Николай Тарасов" width="450" height="460" />
+                  srcset="./images/nikol-mobil-1x.jpg 1x, ./images/nikol-mobil-2x.jpg 2x"
+                  media="(max-width:767px)"
+                />
+                <source
+                  srcset="./images/nikol-tab-1x.jpg 1x, ./images/nikol-tab-2x.jpg 2x"
+                  media="(max-width:1199px)"
+                />
+                <source
+                  srcset="./images/nikol-desk-1x.jpg 1x, ./images/nikol-desk-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <img src="./images/koly.jpg" alt="фото Николай Тарасов" width="450" height="460" />
               </picture>
               <div class="team-name">
                 <h3 class="team-item-title">Николай Тарасов</h3>
@@ -317,12 +374,20 @@
             </li>
 
             <li class="team-item">
-               <picture>
+              <picture>
                 <source
-                     srcset="./images/mihail-mobil-1x.jpg 1x,
-                     ./images/mihail-mobil-2x.jpg 2x"
-                     media="(max-width:767px">
-                     <img src="./images/misha.jpg" alt="фото Михаил Ермаково" width="450" height="460" />
+                  srcset="./images/mihail-mobil-1x.jpg 1x, ./images/mihail-mobil-2x.jpg 2x"
+                  media="(max-width:767px)"
+                />
+                <source
+                  srcset="./images/mihail-tab-1x.jpg 1x, ./images/mihail-tab-2x.jpg 2x"
+                  media="(max-width:1199)px"
+                />
+                <source
+                  srcset="./images/mihail-desk-1x.jpg 1x, ./images/mihail-desk-2x.jpg 2x"
+                  media="(min-width:1200)px"
+                />
+                <img src="./images/misha.jpg" alt="фото Михаил Ермаково" width="450" height="460" />
               </picture>
               <div class="team-name">
                 <h3 class="team-item-title">Михаил Ермаков</h3>
