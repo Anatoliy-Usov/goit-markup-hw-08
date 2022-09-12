@@ -1,3 +1,11 @@
+body {
+  font-family: var(-main-font-family);
+  color: var(--main-color-text);
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
 .list {
   list-style: none;
 }

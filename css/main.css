@@ -11,11 +11,7 @@
   --main-color-black: #000000;
   --main-color-footer: #2f303a;
   --main-cubic: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  color: var(--main-color-text);
+  --main-font-family: "Roboto", sans-serif;
 }
 
 p,
@@ -42,6 +38,14 @@ img {
   display: block;
   width: 100%;
   height: auto;
+}
+
+body {
+  font-family: var(-main-font-family);
+  color: var(--main-color-text);
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.71;
 }
 
 .list {
