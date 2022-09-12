@@ -1,11 +1,10 @@
-@import './utils/variables';
 @import './base/reset';
+@import './utils/vars';
+@import './components/container';
 @import './base/common';
 @import './utils/hidden';
 @import './utils/mixin';
 @import './base/section';
-@import './components/container';
-
 
 @import './bloks/header';
 @import './bloks/hero';
@@ -15,5 +14,4 @@
 @import './bloks/customers';
 @import './bloks/footer';
 @import './components/modal';
-@import './components/menu-mobile';
 @import './bloks/portfolio';

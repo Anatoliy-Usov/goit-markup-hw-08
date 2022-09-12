@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -20,8 +20,8 @@
     />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-  <body>
-    <header class="header">
+  <body class="no-scroll">
+    <header class="header header-flex">
       <div class="container header__container">
         <nav class="navigation">
           <a lang="en" href="" class="link navigation__logo-base">
@@ -30,10 +30,10 @@
           <ul class="navigation__list list">
             <li><a href="./index.html" class="navigation__link link choice">Студія</a></li>
             <li><a href="./portfolio.html" class="navigation__link link">Портфоліо</a></li>
-            <li><a href="" class="navigation__link link">Контакти</a></li>
+            <li><a href="" class="navigation__link link" >Контакти</a></li>
           </ul>
         </nav>
-        <ul class="navigation__list list">
+        <ul class="navigation__contact list">
           <li class="header__contact">
             <a lang="en" href="mailto:info@devstudio.com" class="header__mail link">
               <svg class="header__icon" width="16" height="12">
@@ -49,9 +49,55 @@
             </a>
           </li>
         </ul>
+        <button type="button" class="open__menu" mobile-menu-open>
+          <svg class="icon__menu" width="24px" height="16px">
+            <use href="./images/icon.svg#icon-menu_mob"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob__menu is-hidden" mobile-menu>
+        <dir class="container">
+          <div class="mob__container">
+            <button type="button" class="close__menu" mobile-menu-close>
+              <svg class="icon__menu" width="20px" height="20px">
+                <use href="./images/icon.svg#icon-close_mob"></use>
+              </svg>
+            </button>
+            <nav class="mob__navigation">
+              <ul class="mob__navigation-list list">
+                <li class="mob__navigation-item">
+                  <a href="./index.html" class="mob__navigation-link link choice" data-menu-close
+                    >Студія</a
+                  >
+                </li>
+                <li class="mob__navigation-item">
+                  <a href="./portfolio.html" class="mob__navigation-link link">Портфоліо</a>
+                </li>
+                <li class="mob__navigation-item">
+                  <a href="" class="mob__navigation-link link mobile-menu-open">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <ul class="mob__contact-list list">
+            <li class="mob__contact-tel">
+              <a lang="en" href="tel:+380961111111" class="mob__tel link">+38 096 111 11 11</a>
+            </li>
+            <li class="mob__contact-mail">
+              <a lang="en" href="mailto:info@devstudio.com" class="mob___mail link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mob__soc-list list">
+            <li class="mob__soc-item"><a href="" class="mob__link link">Instagram</a></li>
+            <li class="mob__soc-item"><a href="" class="mob__link link">Twitter</a></li>
+            <li class="mob__soc-item"><a href="" class="mob__link link">Facebook</a></li>
+            <li class="mob__soc-item"><a href="" class="mob__link link">LinkedIn</a></li>
+          </ul>
+        </dir>
       </div>
     </header>
-
     <main class="main">
       <section class="hero">
         <div class="container">
@@ -59,7 +105,6 @@
           <button type="button" class="hero__btn" data-modal-open>Замовити послугу</button>
         </div>
       </section>
-
       <section class="skill">
         <div class="container">
           <ul class="skill__list list">
@@ -110,7 +155,6 @@
           </ul>
         </div>
       </section>
-
       <section class="referral section">
         <div class="container">
           <h2 class="referral-title">Чим ми займаємося</h2>
@@ -136,13 +180,18 @@
           </ul>
         </div>
       </section>
-
       <section class="team section">
         <div class="container">
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-item">
-              <img src="./images/igor.jpg" alt="фото Игорь Демьяненко" width="270" height="260" />
+              <picture>
+                <source
+                     srcset="./images/igor-mobil-1x.jpg 1x,
+                     ./images/igor-mobil-2x.jpg 2x"
+                     media="(max-width:767px">
+                     <img src="./images/igor.jpg" alt="фото Игорь Демьяненко" width="450" height="460" />
+              </picture>
               <div class="team-name">
                 <h3 class="team-item-title">Игорь Демьяненко</h3>
                 <p class="team-item-after-title">Product Designer</p>
@@ -180,7 +229,13 @@
             </li>
 
             <li class="team-item">
-              <img src="./images/olga.jpg" alt="фото Ольга Репина" width="270" height="260" />
+               <picture>
+                <source
+                     srcset="./images/olga-mobil-1x.jpg 1x,
+                     ./images/olga-mobil-2x.jpg 2x"
+                     media="(max-width:767px">
+                     <img src="./images/olga.jpg" alt="фото Ольга Репина" width="450" height="460" />
+              </picture>
               <div class="team-name">
                 <h3 class="team-item-title">Ольга Репина</h3>
                 <p class="team-item-after-title">Frontend Developer</p>
@@ -218,7 +273,13 @@
             </li>
 
             <li class="team-item">
-              <img src="./images/koly.jpg" alt="фото Николай Тарасов" width="270" height="260" />
+               <picture>
+                <source
+                     srcset="./images/nikol-mobil-1x.jpg 1x,
+                     ./images/nikol-mobil-2x.jpg 2x"
+                     media="(max-width:767px">
+                     <img src="./images/koly.jpg" alt="фото Николай Тарасов" width="450" height="460" />
+              </picture>
               <div class="team-name">
                 <h3 class="team-item-title">Николай Тарасов</h3>
                 <p class="team-item-after-title">Marketing</p>
@@ -256,7 +317,13 @@
             </li>
 
             <li class="team-item">
-              <img src="./images/misha.jpg" alt="фото Михаил Ермаков" width="270" height="260" />
+               <picture>
+                <source
+                     srcset="./images/mihail-mobil-1x.jpg 1x,
+                     ./images/mihail-mobil-2x.jpg 2x"
+                     media="(max-width:767px">
+                     <img src="./images/misha.jpg" alt="фото Михаил Ермаково" width="450" height="460" />
+              </picture>
               <div class="team-name">
                 <h3 class="team-item-title">Михаил Ермаков</h3>
                 <p class="team-item-after-title">UI Designer</p>
@@ -295,7 +362,6 @@
           </ul>
         </div>
       </section>
-
       <section class="customers section">
         <div class="container">
           <h2 class="team-title">Постійні клієнти</h2>
@@ -421,7 +487,7 @@
         </form>
       </div>
     </footer>
-    
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="btn-close" data-modal-close>
@@ -490,5 +556,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

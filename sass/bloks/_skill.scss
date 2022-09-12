@@ -1,21 +1,32 @@
 .skill {
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include desktop {
+    padding-top: 94px;
+  }
 }
 
 .skill__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: start;
-  column-gap: 30px;
+  gap: 30px;
+  @include desktop {
+    flex-wrap: nowrap;
+  }
 }
 
 .skill__item {
-  min-width: 270px;
+  width: 100%;
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
 }
 
 .skill__box {
-  display: flex;
   height: 120px;
-  background-color: #f5f4fa;
+  display: flex;
+  background-color: var(--main-color-btn-portfolio);
   border-radius: 4px;
   justify-content: center;
   align-items: center;
@@ -31,6 +42,10 @@
   @include font(700, 14, 1.14, 0.03);
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-align: center;
+  @include tablet {
+    text-align: left;
+  }
 }
 
 .skill__after-title {

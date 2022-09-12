@@ -1,6 +1,10 @@
 .footer {
-  background-color: #2f303a;
+  background-color: var(--main-color-footer);
   padding: 60px 0;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    padding-top: 0;
+  }
 }
 
 .footer-logo {
@@ -13,21 +17,30 @@
 }
 
 .footer-container {
-  display: flex;
-  align-items: baseline;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+    text-align: center;
+  }
 }
 
 .footer-addres {
   @include font(null, 14, 1.17, 0.03);
   color: var(--main-color-white);
-
-  display: block;
   font-style: normal;
-  width: 231px;
-  height: 81px;
+  text-align: center;
+
+  // display: block;
+  //
+  // width: 231px;
+  // height: 81px;
 }
 .footer-list {
-  margin-top: 9px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  // margin-top: 9px;
 }
 
 .footer-addres-contact {
@@ -46,16 +59,19 @@
 }
 
 .footer-soc {
-  margin-left: 70px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  // margin-left: 70px;
 }
 
 .footer-soc-list {
   display: flex;
   gap: 10px;
+  justify-content: center;
 }
 
 .footer-title {
-  @include font(null, 14, 1.14, 0.03);
+  @include font(700, 14, 1.14, 0.03);
   text-transform: uppercase;
   color: var(--main-color-white);
   margin-bottom: 20px;
@@ -81,19 +97,29 @@
   background-color: var(--main-color-blue);
 }
 
-.mailing {
-  margin-left: 93px;
+.mailing-box {
+  //   // margin-left: 93px;
+  @media screen and (min-width: 768px) {
+    width: 450px;
+    flex-wrap: nowrap;
+  }
 }
 
 .mailing-title {
-  @include font(null, 14, 1.14, 0.03);
+  @include font(700, 14, 1.14, 0.03);
   text-transform: uppercase;
+  text-align: center;
   color: var(--main-color-white);
   margin-bottom: 20px;
 }
 
 .mailing-box {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  // justify-content: start;
+  // gap: 30px;
 }
 
 .mailing-input {
@@ -123,7 +149,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
+  color: var(--main-color-white);
   margin-left: 12px;
 }
 
