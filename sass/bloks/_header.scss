@@ -11,6 +11,10 @@
     align-items: center;
     justify-content: center;
     height: 60px;
+    @media screen and (min-width: 768px) {
+     height: 80px;
+     width: auto;
+    }
   }
   &__contact {
     // display: none;
@@ -102,7 +106,7 @@
     @include font(500, 14, 1.14, 0.02);
     position: relative;
     color: inherit;
-    padding: 22px 0;
+    padding: 32px 0;
     display: block;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
