@@ -87,9 +87,8 @@
     font-family: 'Raleway';
     @include font(700, 24, 1.17, 0.03);
     @media screen and (min-width: 768px) {
-      margin-left: 15px;
+      // margin-left: 15px;
       @include font(700, 26, 1.19, 0.03);
-      // margin-right: 93px;
     }
   }
   &__list {
