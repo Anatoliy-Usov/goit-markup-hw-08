@@ -115,10 +115,10 @@ body {
   width: 100%;
   z-index: 10;
   margin: auto 0;
-}
-.header__container {
   background-color: var(--main-color-white);
   border-bottom: 1px solid var(--main-color-line);
+}
+.header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1096,7 +1096,7 @@ body {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 20px 20px 20px 20px;
+  padding: 20px 40px 20px 40px;
 }
 @media screen and (min-width: 480px) {
   .modal {
@@ -1105,11 +1105,13 @@ body {
     height: 609px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 1200px) {
   .modal {
-    max-width: 450px;
+    width: 528px;
+    height: auto;
   }
 }
+
 .btn-close {
   position: absolute;
   display: -webkit-box;
@@ -1168,30 +1170,14 @@ body {
   color: var(--main-color-text);
   text-align: center;
   display: block;
-  margin-top: 5px;
   margin-bottom: 12px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 400px) {
   .modal-title {
     font-weight: 700;
     font-size: 20px;
     line-height: 1.5;
     letter-spacing: 0.03em;
-    margin-top: 40px;
-  }
-}
-@media screen and (min-width: 480px) {
-  .modal-title {
-    height: 30px;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.5;
-    letter-spacing: 0.03em;
-  }
-}
-@media screen and (width: 1200px) {
-  .modal-title {
-    margin-top: 0;
   }
 }
 
@@ -1262,8 +1248,12 @@ body {
 }
 
 .coment-input {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
   width: 100%;
-  height: 80px;
+  height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
@@ -1271,14 +1261,12 @@ body {
   -webkit-transition: border-color 1250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 1250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 1200px) {
   .coment-input {
-    height: 120px;
-  }
-}
-@media screen and (width: 1200px) {
-  .coment-input {
-    height: 120px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
   }
 }
 
@@ -1360,10 +1348,6 @@ body {
 }
 @media screen and (min-width: 480px) {
   .check-text {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
     margin-left: 14px;
   }
 }
@@ -1374,7 +1358,6 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
     gap: 8px;
-    margin-left: 14px;
   }
 }
 

@@ -3,10 +3,10 @@
   width: 100%;
   z-index: 10;
   margin: auto 0;
+  background-color: var(--main-color-white);
+  border-bottom: 1px solid var(--main-color-line);
 
   &__container {
-    background-color: var(--main-color-white);
-    border-bottom: 1px solid var(--main-color-line);
     display: flex;
     align-items: center;
     justify-content: center;
